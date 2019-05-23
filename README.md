@@ -1,4 +1,4 @@
-i3buntu
+minimal
 ============
 
 This project is for setting up a minimal Ubuntu installation with the i3 window managing system together with other options that will make the operating system work and look well. The main goal of the project is to construct a flavour of the Ubuntu operating system which
@@ -27,7 +27,7 @@ A guide on how to construct a installation media (CD, DVD or USB key) can be fou
 
 Type the following in the Ubuntu Bash:
 ```
-wget https://github.com/mstaal/i3buntu/archive/master.tar.gz
+wget https://github.com/gmfc/minimal/archive/master.tar.gz
 ```
 and hit `ENTER`. This will download the most recent version of i3buntu from this GitHub account. Now type the following:
 ```
@@ -39,7 +39,7 @@ and hit `ENTER`. This will extract the installation package.
 
 Now type the following in the terminal:
 ```
-cd i3buntu-master
+cd minimal-master
 sudo chmod +x install.sh
 sudo ./install.sh
 ```
