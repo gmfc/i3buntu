@@ -117,9 +117,9 @@ apt-get upgrade -y
 apt-get install -y fontconfig-infinality
 
 ###### Get and install playerctl
-wget 'https://github.com/acrisci/playerctl/releases/download/v0.5.0/playerctl-0.5.0_amd64.deb'
-dpkg -i playerctl-0.5.0_amd64.deb
-rm -rf playerctl-0.5.0_amd64.deb
+wget 'https://github.com/acrisci/playerctl/releases/download/v2.0.2/playerctl-2.0.2_amd64.deb'
+dpkg -i playerctl-2.0.2_amd64.deb
+rm -rf playerctl-2.0.2_amd64.deb
 
 ###### Remove old versions of the Arc theme
 rm -rf /usr/share/themes/{Arc,Arc-Darker,Arc-Dark}
@@ -158,10 +158,10 @@ mkdir ~/.config/i3
 
 ###### Apply GTK theme, fonts, icon theme, login greeter
 ###### and i3
-cp -f ~/i3buntu-master/configs/gtk/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
-cp -f ~/i3buntu-master/configs/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
-cp -f ~/i3buntu-master/configs/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
-cp -f ~/i3buntu-master/configs/i3/config ~/.config/i3/config
+cp -f ~/minimal-master/configs/gtk/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
+cp -f ~/minimal-master/configs/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
+cp -f ~/minimal-master/configs/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+cp -f ~/minimal-master/configs/i3/config ~/.config/i3/config
 
 ###### Set appropriate user permissions
 chown $(whoami):$(whoami) -R /home/$(whoami)/
